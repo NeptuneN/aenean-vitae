@@ -14,7 +14,7 @@ export class PacketComponent {
   addToCart() {
     this.packetsService.addToCart(this.packet).subscribe(response => {
       console.log('Sending', this.packet);
-    }, error => { // Error always triggers due to missing apiURL
+    }, error => { // Error always triggers due to missing apiURL, but it's fine since we're not actually sending data anywhere
       console.log('Sending', this.packet);
     });
   }
