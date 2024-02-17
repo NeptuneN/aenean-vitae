@@ -1,11 +1,11 @@
 <div class="packets__item">
-  <img class="packets__icon" src="assets/icons/{{ packet.icon }}.svg" alt="Package 1 Icon">
+  <img class="packets__icon" src="assets/icons/{{ packet.icon }}.svg" alt="{{ packet.title + ' Icon' }}">
   <h3 class="packets__title">{{ packet.title }}</h3>
   <p class="packets__description">{{ packet.description }}</p>
   <div class="packets__price-cart-wrapper">
     <span class="packets__price">{{ packet.price }}</span>
     <a routerLink="" (click)="addToCart()" class="packets__add-to-cart">
-      <img src="assets/icons/cart.svg" alt="Add to Cart">
+      <img src="assets/icons/cart.svg" alt="Add to Cart Icon">
       Lisa ostukorvi
     </a>
   </div>
