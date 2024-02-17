@@ -1,0 +1,163 @@
+@import '../../styles.scss';
+
+.banner {
+    &__main {
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../../assets/images/aenean_vitae_background.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px; // consider changing
+        // max-height: 500px;
+        // height: 100%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        max-width: 458px;
+        width: 100%;
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-size: 2rem;
+        font-weight: 500;
+        color: $white;
+        margin: unset;
+    }
+
+    &__description {
+        display: flex;
+    }
+
+    &__text {
+        font-size: 20px;
+        font-size: 1.25rem;
+        font-style: italic;
+        line-height: 30px;
+        margin: unset;
+        color: $white;
+        text-align: center;
+    }
+
+    &__quotation {
+        margin: 0 5px 0 0;
+    }
+}
+
+.packets {
+    margin: 124px 0;
+
+    &__main {
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 48px;
+    }
+}
+
+.lorem {
+    padding: 74px 0;
+    background-color: $bgwhite;
+
+    &__main {
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__item {
+        max-width: 940px;
+        width: 100%;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 24px;
+        margin: unset;
+    }
+}
+
+@media only screen and (max-width: $tabletViewport) {
+    .banner {
+        &__main {
+            height: 400px;
+        }
+        
+        &__content {
+            gap: 24px;
+        }
+    }
+
+    .packets {
+        margin: 80px 0;
+
+        &__content {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+    }
+
+    .lorem {
+        padding: 40px 0;
+    }
+}
+
+@media only screen and (max-width: $mobileViewport) {
+    .banner {
+        &__content {
+            gap: 16px;
+        }
+
+        &__title {
+            font-size: 24px;
+            font-size: 1.5rem;
+        }
+
+        &__text {
+            font-size: 18px;
+            font-size: 1.125rem;
+            line-height: 26px;
+        }
+    }
+    .packets {
+        &__content {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media only screen and (max-width: $smallMobileViewport) {
+    .banner {
+        &__text {
+            font-size: 16px;
+            font-size: 1rem;
+            line-height: 24px;
+        }
+    }
+}

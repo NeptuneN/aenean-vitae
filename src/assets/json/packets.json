@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "slug": "pakett_1",
+        "title": "Pakett 1",
+        "icon": "boxes",
+        "price": "99 €",
+        "description": "Integer faucibus blandit eros, id iaculis erat"        
+    },
+    {
+        "id": "2",
+        "slug": "pakett_2",
+        "title": "Pakett 2",
+        "icon": "shop",
+        "price": "129 €",
+        "description": "Orci varius natoque penatibus et magnis dis parturient montes"        
+    },
+    {
+        "id": "3",
+        "slug": "pakett_3",
+        "title": "Pakett 3",
+        "icon": "globe",
+        "price": "199 €",
+        "description": "Vivamus vestibulum lacus sit amet mi pulvinar ornare"
+    }
+]

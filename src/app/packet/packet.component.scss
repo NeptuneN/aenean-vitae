@@ -1,0 +1,64 @@
+@import '../../styles.scss';
+
+.packets {
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 274px;
+        width: 100%;
+    }
+
+    &__icon {
+        max-width: 64px;
+        max-height: 64px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-size: 1.25rem;
+        line-height: 24px;
+        margin: 30px 0 10px;
+        color: $blue;
+        border-bottom: 2px solid $blue; // explain why this over text-decoration: underline;
+    }
+
+    &__description {
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 24px;
+        margin: 0 0 16px;
+        text-align: center;
+    }
+
+    &__price-cart-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1 1 auto; // equal height
+        justify-content: flex-end;
+    }
+
+    &__price {
+        margin: 0 0 10px;
+        font-size: 32px;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 48px;
+        color: $blue;
+    }
+
+    &__add-to-cart {
+        display: flex;
+        gap: 6px;
+        padding: 12px 24px;
+        border-radius: 2px;
+        background-color: $blue;
+        font-size: 16px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: $white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

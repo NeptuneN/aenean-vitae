@@ -1,0 +1,38 @@
+<section class="banner">
+  <div class="banner__main">
+    <div class="banner__content">
+      <div class="banner__heading">
+        <!-- <svg>
+          <use href="assets/icons/av_logo.svg#av_logo"></use>
+        </svg> -->
+        <img class="banner__logo" src="assets/icons/av_logo.svg" alt="Aenean Vitae Logo">
+        <h1 class="banner__title">Aenean Vitae</h1>
+      </div>
+      <div class="banner__description">
+        <!-- <svg>
+          <use href="assets/icons/quotation_mark.svg#quotation_mark"></use>
+        </svg> -->
+        <p class="banner__text"><img class="banner__quotation" src="assets/icons/quotation_mark.svg" alt="Quotation Mark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis elit in leo iaculis euismod. Sed aliquam aliquet lectus, eget placerat est vestibulum eget.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="packets">
+  <div class="packets__main">
+    <div class="packets__content">
+      <app-packet *ngFor="let packet of packets" [packet]="packet"></app-packet>
+    </div>
+  </div>
+</section>
+<section class="lorem">
+  <div class="lorem__main">
+    <div class="lorem__content">
+      <div class="lorem__item">
+        <p class="lorem__text">Suspendisse ut elit vestibulum, finibus elit maximus, ultricies tortor. Praesent convallis lobortis magna, sit amet eleifend elit tincidunt sit amet. Duis bibendum tortor at felis convallis mollis. Aenean massa libero, dapibus vel euismod ut, faucibus sed nisl. Nulla posuere nulla eu leo auctor dignissim. Cras lectus risus, euismod eu commodo in, viverra consequat ante. Etiam a nisl laoreet, fermentum felis sit amet, semper turpis.</p>
+      </div>
+      <div class="lorem__item">
+        <p class="lorem__text">Ut fringilla mollis sapien et scelerisque. Quisque at arcu nibh. Nam rutrum vitae sem a elementum. Mauris tempor nec nisl a efficitur. Nullam malesuada justo ut enim fermentum mollis. Vivamus metus dolor, faucibus ac rutrum vitae, interdum eget metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum lacinia enim at dolor molestie, eget lobortis augue iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+      </div>
+    </div>
+  </div>
+</section>

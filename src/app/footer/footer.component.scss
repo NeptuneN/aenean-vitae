@@ -1,0 +1,48 @@
+@import '../../styles.scss';
+
+.footer {
+    background-color: $blue;
+
+    &__main {
+        padding: 0 20px;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 48px;
+        padding: 16px 0;
+    }
+    
+    &__company {
+        font-weight: 700;
+    }
+
+    &__company, &__address, &__registry, &__email {
+        font-size: 16px;
+        font-size: 1rem;
+        color: $white;
+        margin: unset;
+    }
+}
+
+@media only screen and (max-width: 808px) {
+    .footer {
+        &__content {
+            gap: unset;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media only screen and (max-width: $tabletViewport) {
+    .footer {
+        &__content {
+            flex-direction: column;
+            justify-content: unset;
+            align-items: flex-start;
+            gap: 4px;
+        }
+    }
+}

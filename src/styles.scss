@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+$white: #FFFFFF;
+$bgwhite: #F6F6F6;
+$blue: #255CA1;
+
+$regularViewport: 1920px;
+$largeViewport: 1440px;
+$mediumViewport: 1024px;
+$tabletViewport: 768px;
+$mobileViewport: 425px;
+$smallMobileViewport: 320px;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
