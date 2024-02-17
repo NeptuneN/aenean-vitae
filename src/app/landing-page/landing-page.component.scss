@@ -2,18 +2,43 @@
 
 .banner {
     &__main {
+        position: relative;
         padding: 0 20px;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 500px;
+    }
+
+    &__image-container {
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__image {
         background-image: url('../../assets/images/aenean_vitae_background.webp');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 500px;
+        height: 100%;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(37, 92, 161, 0.5);
+            mix-blend-mode: multiply;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
     }
 
     &__content {
+        z-index: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
